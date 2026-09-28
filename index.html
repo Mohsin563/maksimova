@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maksimova Photo | Fashion, magazine and event photographer in Los Angeles and Las Vegas</title>
+<meta name="description" content="Fashion, magazine and event photography in Los Angeles and Las Vegas. Photographing people, brands and emotions.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📷</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,500;0,700;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="bar">
+  <a class="mark" href="#top">Maksimova Photo</a>
+  <nav aria-label="Main">
+    <a href="#work">Work</a><a href="#services">Services</a><a href="#book">Book</a>
+  </nav>
+</header>
+
+<main id="top">
+<section class="cover">
+  <h1 class="masthead">Maksimova</h1>
+  <p class="issue">Photographer &middot; Los Angeles &amp; Las Vegas</p>
+  <div class="cover-grid">
+    <ul class="lines left">
+      <li><b>Fashion</b>Editorial shoots with a point of view</li>
+      <li><b>Magazine</b>Covers, spreads and campaigns</li>
+    </ul>
+    <figure class="cover-photo"><img src="images/red-car.jpg" alt="Model in a red dress posing on a white convertible with a bouquet of red roses"></figure>
+    <ul class="lines right">
+      <li><b>Events</b>Coverage that catches the moment</li>
+      <li><b>People &amp; brands</b>Portraits with real emotion</li>
+    </ul>
+  </div>
+  <a class="btn" href="#book">Book a shoot</a>
+</section>
+
+<section id="services" class="services">
+  <h2>I photograph people, brands and emotions.</h2>
+  <div class="cols">
+    <p>From golden hour in the desert to night shoots in the city, every session is planned around the person in front of the camera and the story you want to tell.</p>
+    <p>Based in Los Angeles and Las Vegas, available for fashion, magazine and event work, and for brands that need imagery with personality.</p>
+  </div>
+</section>
+
+<section id="work" class="work">
+  <div class="head"><h2>Selected work</h2><a href="https://www.instagram.com/maksimova_photo/" target="_blank" rel="noopener">See everything on Instagram</a></div>
+  <div class="gallery" id="gallery">
+    <figure><button type="button"><img src="images/field-easel.jpg" alt="Woman painting on an easel in a golden field" loading="lazy"></button></figure>
+    <figure><button type="button"><img src="images/green-dress.jpg" alt="Model in a green tie-dye dress against a green backdrop" loading="lazy"></button></figure>
+    <figure><button type="button"><img src="images/beach-veil.jpg" alt="Woman in a long white veil and dress on the beach" loading="lazy"></button></figure>
+    <figure><button type="button"><img src="images/hollywood.jpg" alt="Model seated at a small table with the Hollywood sign behind her" loading="lazy"></button></figure>
+    <figure><button type="button"><img src="images/barrel-cowgirl.jpg" alt="Model in a cowboy hat leaning on a barrel at a wooden western set" loading="lazy"></button></figure>
+    <figure><button type="button"><img src="images/desert-rock.jpg" alt="Woman standing beside a large rock in warm evening light" loading="lazy"></button></figure>
+    <figure><button type="button"><img src="images/yellow-tee.jpg" alt="Woman in a yellow t-shirt holding a gold mask over her face" loading="lazy"></button></figure>
+    <figure><button type="button"><img src="images/denim-cowgirl.jpg" alt="Model in a denim outfit and white cowboy boots on a western set" loading="lazy"></button></figure>
+    <figure><button type="button"><img src="images/blue-dress.jpg" alt="Blonde model in a blue knit dress at night" loading="lazy"></button></figure>
+    <figure><button type="button"><img src="images/easel-sunset.jpg" alt="Woman painting at an easel on a blanket at sunset" loading="lazy"></button></figure>
+    <figure><button type="button"><img src="images/cybertruck.jpg" alt="Woman in black standing beside a truck in a dark parking structure" loading="lazy"></button></figure>
+  </div>
+</section>
+
+<section class="places">
+  <div><h3>Los Angeles</h3><p>Studio, rooftops, canyons and the coast.</p></div>
+  <div><h3>Las Vegas</h3><p>Neon nights and desert light.</p></div>
+</section>
+
+<section id="book" class="book">
+  <div class="book-text">
+    <h2>Book your date</h2>
+    <p>Tell me what you have in mind. Send the details below and I'll reply on Instagram.</p>
+    <a class="link" href="https://www.instagram.com/maksimova_photo/" target="_blank" rel="noopener">@maksimova_photo</a>
+  </div>
+  <form id="form">
+    <label>Your name<input id="name" required autocomplete="name"></label>
+    <label>Type of shoot
+      <select id="type"><option>Fashion</option><option>Magazine</option><option>Event</option><option>Brand or campaign</option><option>Portrait</option></select>
+    </label>
+    <label>City
+      <select id="city"><option>Los Angeles</option><option>Las Vegas</option></select>
+    </label>
+    <label>Preferred date<input id="date" type="date"></label>
+    <label>Tell me about your idea<textarea id="msg" rows="4" required></textarea></label>
+    <button class="btn" type="submit">Copy request and open Instagram</button>
+    <p id="status" role="status"></p>
+  </form>
+</section>
+</main>
+
+<footer>
+  <span>&copy; <span id="yr"></span> Maksimova Photo</span>
+  <span>Los Angeles &amp; Las Vegas</span>
+  <a href="https://www.instagram.com/maksimova_photo/" target="_blank" rel="noopener">Instagram</a>
+</footer>
+
+<dialog id="lb" aria-label="Photo viewer">
+  <button type="button" class="close" aria-label="Close">Close</button>
+  <img id="lbimg" alt="">
+</dialog>
+<script src="script.js"></script>
+</body>
+</html>
